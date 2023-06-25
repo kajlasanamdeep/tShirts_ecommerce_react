@@ -1,0 +1,118 @@
+.container h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--label);
+    padding-bottom: 1.25rem;
+    margin: 0;
+}
+
+.input_holder {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.input_holder img {
+    max-height: 128px;
+    max-width: 128px;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+.input_holder input::-webkit-outer-spin-button,
+.input_holder ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_holder input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input_holder textarea {
+    resize: none;
+}
+
+.checkbox_row > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.checkbox_row > div > div {
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.checkbox_row > div > div label {
+    color: var(--bs-dark);
+}
+
+.checkbox_row input:checked {
+    accent-color: var(--primary);
+}
+
+.toggle {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.toggle input {
+    float: none !important;
+    margin-left: 1rem !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    height: 24px;
+    width: 2.75em !important;
+}
+
+.toggle input:not(:checked) {
+    background-color: var(--white) !important;
+    border-color: var(--bs-border-color) !important;
+}
+
+
+.toggle input:focus {
+    box-shadow: none;
+}
+
+.color input[type=color] {
+    height: 37px;
+}
+
+.color_row {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+
+.color_row > div {
+    padding-block: 0.75rem;
+}
+
+.color_row button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    fill: var(--white);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.color_row button:hover {
+    opacity: 0.85;
+}
+
+.color_row img {
+    max-height: 128px;
+    max-width: 128px;
+    object-fit: contain;
+    margin: 0.5rem;
+    aspect-ratio: unset;
+}

@@ -1,0 +1,52 @@
+.profile_container > h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--label);
+    padding-bottom: 1.25rem;
+    margin: 0;
+}
+
+.profile_data {
+    color: var(--grey);
+}
+
+.email {
+    font-weight: 600;
+}
+
+.profile_data h5 {
+    color: var(--black);
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-block: 0.5rem;
+}
+
+.row > div:first-child {
+    flex: 0.2;
+}
+
+.row > div:last-child {
+    flex: 0.8;
+}
+
+.active {
+    color: var(--bs-success);
+}
+
+.blocked {
+    color: var(--bs-danger);
+}
+
+.card {
+    width: clamp(200px, 100%, 800px);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    .row {
+        flex-direction: column;
+    }
+}

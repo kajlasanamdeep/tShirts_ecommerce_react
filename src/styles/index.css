@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --primary: #556ee6;
+  --secondary: #EFF2F7;
+  --dark-bg: #2a3042;
+  --label: #495057;
+  --danger: #f46a6a;
+  --white: #ffffff;
+  --grey: #74788D;
+  --yellow: #fdcc0d;
+  --header-text: #555B6D;
+  --black: #000000;
+  --inactive-item: #A6B0CF;
+  --drop-shadow: #12263F08;
+  --border: #ced4da;
+  --body-bg: #f8f8fb;
+  --background-primary: rgba(85,110,230,.25);
+  --loader-border: #3254fd;
+}
+
+body {
+  background-color: var(--body-bg);
+}

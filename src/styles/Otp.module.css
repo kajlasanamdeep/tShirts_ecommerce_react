@@ -1,0 +1,70 @@
+.card_container {
+    width: clamp(250px, 70%, 456px);
+    box-shadow: 0px 10px 20px 0px var(--drop-shadow);
+    margin-inline: auto;
+    align-self: center;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.envelope {
+    height: 72px;
+    width: 72px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    align-self: center;
+}
+
+.heading {
+    text-align: center;
+    color: var(--label);
+    padding-block: 30px;
+}
+
+.heading h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.heading p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.heading p span {
+    font-weight: 500;
+}
+
+.form {
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.password_input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password_input > div:first-child {
+    flex: 1;
+}
+
+.password_input input {
+    padding-right: 40px;
+}
+
+.eye {
+    position: absolute;
+    top: 32px;
+    right: 12px;
+}

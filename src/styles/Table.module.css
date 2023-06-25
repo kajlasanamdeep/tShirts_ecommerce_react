@@ -1,0 +1,116 @@
+.no_data {
+    text-align: center;
+    padding-block: 8rem !important;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.table_head > tr > th {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--dark-bg);
+}
+
+.table_body {
+    text-align: center;
+    font-size: 13px;
+}
+
+.active {
+    color: var(--bs-success) !important;
+}
+
+.blocked {
+    color: var(--bs-danger) !important;
+}
+
+.table_body .color {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: 1px solid var(--black);
+}
+
+.table_body img {
+    max-height: 128px;
+    max-width: 128px;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+.table_footer {
+    background-color: var(--white);
+    display: table-caption;
+}
+
+.table_footer tr, .table_footer tr td {
+    display: block;
+}
+
+.inactive_color {
+    cursor: not-allowed;
+    position: relative;
+    opacity: 0.7;
+}
+
+.inactive_color::after {
+    content: '';
+    height: 3px;
+    width: 24px;
+    background-color: var(--bs-danger);
+    position: absolute;
+    transform: rotate(130deg);
+}
+
+.pagination_container {
+    display: flex;
+    align-items: center;
+}
+
+.pagination_container button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    fill: var(--dark-bg);
+}
+
+.pagination_container button.inactive {
+    fill: var(--inactive-item);
+    cursor: not-allowed;
+}
+
+.pagination_container p {
+    margin: 0;
+    padding-inline: 1rem;
+}
+
+.pagination_container svg {
+    fill: inherit;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pencil, .bin, .star {
+    border: none;
+    background-color: transparent;
+}
+
+.pencil {
+    fill: var(--bs-success);
+}
+
+.bin {
+    fill: var(--bs-danger);
+}
+
+.star {
+    fill: var(--yellow);
+}
